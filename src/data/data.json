@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Butter",
+        "img":"https://media.istockphoto.com/id/179875636/photo/butter.jpg?s=612x612&w=0&k=20&c=dQjAemP1f3RDr64uN7gN5TQCZI6XkkgijtWYo9yTB7o=",
+        "price": 23
+    },
+    {
+        "name": "Crud",
+        "img":"https://media.istockphoto.com/id/1164701481/photo/homemade-white-butter.jpg?s=612x612&w=0&k=20&c=dNIpwuplgU05z2OAXV2WxnXGVA2maJSeb-dmZtsOAuc=",
+        "price": 23
+    },
+    {
+        "name": "Honey",
+        "img":"https://media.istockphoto.com/id/1438703200/photo/flower-honey.jpg?s=612x612&w=0&k=20&c=smdEPy-ogn7pANPYoroTtTN3sVVpG_BdAK5Aniwzm-8=",
+        "price": 23
+    },
+    {
+        "name": "Ghee",
+        "img":"https://media.istockphoto.com/id/1371754787/photo/glass-jar-and-wooden-spoon-with-yellow-ghee.jpg?s=612x612&w=0&k=20&c=-Qi_sAWZECEk9EgLSqgqlwauEO0oZR7nhsQRODrueD0=",
+        "price": 23
+    },
+    {
+        "name": "Sauce",
+        "img":"https://media.istockphoto.com/id/1256464188/photo/large-collection-of-sauces-and-spiced-spreads-in-small-jars-isolated-flat-lay.jpg?s=612x612&w=0&k=20&c=_hZie6NqUk-CsL8ZfRryT_FRCqF3M2ISR5KscgsTLCU=",
+        "price": 23
+    },
+    {
+        "name": "Pickle",
+        "img":"https://media.istockphoto.com/id/1472581913/photo/homemade-kimchee-and-glass-jar.jpg?s=612x612&w=0&k=20&c=Gt7ZMDR7dhP3i9xaypaMSfJ_EHBsvcQee88YEywDdNg=",
+        "price": 23
+    }
+    
+]

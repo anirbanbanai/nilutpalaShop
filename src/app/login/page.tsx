@@ -1,0 +1,87 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+"use client";
+import React from "react";
+import { Card, Input, Button, Typography } from "@material-tailwind/react";
+import { SubmitHandler, useForm } from "react-hook-form";
+import Link from "next/link";
+import axios from "axios";
+type Inputs = {
+  username: string;
+  password: string;
+};
+const page = () => {
+  const { register, handleSubmit } = useForm<Inputs>({
+    defaultValues: {
+      username: "john_doe",
+      password: "123456",
+    },
+  });
+
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    const datas = await axios.post("/api/auth", data)
+    console.log(datas);
+  };
+  return (
+    <Card
+      className="m-5 p-5 bg-blue-gray-50"
+      placeholder={""}
+      color="transparent"
+      shadow={false}
+    >
+      <h2 className="text-4xl font-semibold text-black text-center">Login</h2>
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="mt-8 mb-2 mx-auto w-80 max-w-screen-lg sm:w-96"
+      >
+        <div className="mb-1 flex flex-col gap-6">
+          <Typography
+            placeholder={""}
+            variant="h6"
+            color="blue-gray"
+            className="-mb-3"
+          >
+            username
+          </Typography>
+          <Input
+            {...register("username")}
+            crossOrigin={""}
+            size="lg"
+            placeholder="name@mail.com"
+            className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+            labelProps={{
+              className: "before:content-none after:content-none",
+            }}
+          />
+          <Typography
+            placeholder={""}
+            variant="h6"
+            color="blue-gray"
+            className="-mb-3"
+          >
+            Password
+          </Typography>
+          <Input
+            type="password"
+            {...register("password")}
+            crossOrigin={""}
+            size="lg"
+            placeholder="name@mail.com"
+            className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+            labelProps={{
+              className: "before:content-none after:content-none",
+            }}
+          />
+        </div>
+
+        <Button type="submit" placeholder={""} className="mt-6" fullWidth>
+          sign up
+        </Button>
+        <h2>
+          Already have an Accunt? <Link href="sign-up">Register</Link>
+        </h2>
+      </form>
+    </Card>
+  );
+};
+
+export default page;
