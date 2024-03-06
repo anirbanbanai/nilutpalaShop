@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import {
   Navbar,
@@ -7,8 +8,11 @@ import {
   IconButton,
   Input,
 } from "@material-tailwind/react";
-import { CiSearch } from "react-icons/ci";
+import { CiSearch, CiShoppingCart } from "react-icons/ci";
 import Link from "next/link";
+import { IoHomeOutline } from "react-icons/io5";
+import { MdOutlineInventory } from "react-icons/md";
+import { FcHome, FcPaid } from "react-icons/fc";
  
 export function NavbarWithSearch() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -22,9 +26,9 @@ export function NavbarWithSearch() {
  
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-   <Link href="/" className="text-xl text-black font-semibold">Home</Link>
-   <Link href="/inventory" className="text-xl text-black font-semibold">Inventory</Link>
-   <Link href="/cart" className="text-xl text-black font-semibold">Cart</Link>
+   <Link href="/" className="text-xl text-black font-semibold flex items-center gap-2"><FcHome/> Home</Link>
+   <Link href="/inventory" className="text-xl text-black font-semibold flex items-center gap-2"><MdOutlineInventory/> Inventory</Link>
+   <Link href="/cart" className="text-xl text-black font-semibold flex items-center gap-2"><FcPaid/> Cart</Link>
     </ul>
   );
  

@@ -1,6 +1,7 @@
 "use client";
 import React, { ReactNode } from "react";
-import { NavbarWithSearch } from "../components/Navbar";
+import { NavbarWithSearch } from "@/app/(all)/components/Navbar";
+
 
 interface LayoutProps {
   children: ReactNode;
@@ -10,7 +11,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div>
       <NavbarWithSearch />
-      <div className="pt-24">{children}</div>
+      <div className="pt-24">
+        {children}
+        </div>
     </div>
   );
 };

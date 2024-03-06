@@ -1,7 +1,6 @@
-"use client";
-
-import { TabsDefault } from "../components/Tabs";
-import MiddlePart from "../components/middlePart";
+import React from "react";
+import { TabsDefault } from "@/app/(all)/components/Tabs";
+import MiddlePart from "@/app/(all)/components/middlePart";
 
 export default function Home() {
   return (

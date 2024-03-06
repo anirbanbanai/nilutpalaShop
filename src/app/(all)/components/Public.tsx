@@ -1,8 +1,11 @@
+"use client"
 import React from "react";
 import img from "@/assests/istockphoto-179875636-612x612.jpg";
 import Image from "next/image";
 import data from "@/data/data.json";
 import { Button } from "@material-tailwind/react";
+import { FcAddDatabase, FcPaid } from "react-icons/fc";
+import { CiShoppingCart } from "react-icons/ci";
 const Public = () => {
   return (
     <div className="grid sm:grid-cols-2 lg:grid-cols-3">
@@ -12,23 +15,24 @@ const Public = () => {
           <Image width={550} height={333} src={m.img} alt="img" />
 
           <div className="flex justify-between items-center gap-3 mt-3">
-            <p className=""> Price : {m.price} tk</p>
+            <p className=""> Price : <span className="font-bold">{m.price} tk</span></p>
             <Button
               placeholder={""}
               color="red"
-              size="md"
-              className="rounded-lg "
-            >
-              Buy
+              size="sm"
+              className="rounded-lg flex gap-2 items-center"
+            > <FcAddDatabase className="text-3xl"/>
+             <span className=""> Buy</span>
             </Button>
             <Button
               placeholder={""}
-              color="blue"
-              size="md"
-              className="rounded-lg "
-            >
-              Add to Cart
+             
+              size="sm"
+              className="rounded-lg flex gap-2 items-center bg-blue-gray-200 text-black"
+            > <CiShoppingCart className="text-3xl"/>
+             <span className=""> Add to cart</span>
             </Button>
+
           </div>
         </div>
       ))}
