@@ -16,22 +16,21 @@ const Public = () => {
 
           <div className="flex justify-between items-center gap-3 mt-3">
             <p className=""> Price : <span className="font-bold">{m.price} tk</span></p>
-            <Button
-              placeholder={""}
-              color="red"
-              size="sm"
-              className="rounded-lg flex gap-2 items-center"
-            > <FcAddDatabase className="text-3xl"/>
-             <span className=""> Buy</span>
-            </Button>
-            <Button
+
+         
+
+            <button className="text-xs font-semibold bg-red-500 px-3 py-2 rounded-2xl flex gap-1 items-center text-black"> <FcAddDatabase className="text-2xl"/>Buy</button>
+
+            <button className="text-xs font-semibold bg-[#e1e0e0] px-3 py-2 rounded-2xl flex gap-1 items-center text-black"> <CiShoppingCart className="text-3xl"/>Add to card</button>
+
+            {/* <Button
               placeholder={""}
              
               size="sm"
               className="rounded-lg flex gap-2 items-center bg-blue-gray-200 text-black"
             > <CiShoppingCart className="text-3xl"/>
              <span className=""> Add to cart</span>
-            </Button>
+            </Button> */}
 
           </div>
         </div>

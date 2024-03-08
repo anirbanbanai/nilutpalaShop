@@ -4,7 +4,7 @@ import MiddlePart from "@/app/(all)/components/middlePart";
 
 export default function Home() {
   return (
-    <main className="max-w-screen-xl mx-auto ">
+    <main className=" ">
       <div className=" z-10">
         <TabsDefault />
         <MiddlePart />

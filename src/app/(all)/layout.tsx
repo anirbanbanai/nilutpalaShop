@@ -11,7 +11,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div>
       <NavbarWithSearch />
-      <div className="pt-24">
+      <div className="pt-20 lg:pt-32 xl:pt-24">
         {children}
         </div>
     </div>
